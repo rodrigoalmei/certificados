@@ -1,16 +1,168 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pt-br">
 <head>
-  <title>Certificados</title>
+  <meta charset="UTF-8">
+  <title>Validação de Certificados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0a58ca, #0d6efd);
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #0a58ca;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e9f7ef;
+      color: #198754;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .cert-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .cert-card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .cert-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .cert-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0a58ca;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .cert-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+
 </head>
+
 <body>
 
-<h1>Verificação de Certificados</h1>
+  <div class="container">
 
-<ul>
-  <li><a href="/acls/">Certificado ACLS</a></li>
-  <li><a href="/atls/">Certificado ATLS</a></li>
-</ul>
+```
+<div class="logo">
+  Sistema de Validação de Certificados
+</div>
+
+<div class="subtitle">
+  Plataforma oficial de verificação de autenticidade
+</div>
+
+<div class="status">
+  ✔ Sistema online e operacional
+</div>
+
+<div class="cert-list">
+
+  <div class="cert-card">
+    <div class="cert-title">
+      Certificado ACLS
+    </div>
+
+    <div class="cert-desc">
+      Advanced Cardiovascular Life Support
+    </div>
+
+    <a href="/acls/" class="btn">
+      Verificar Certificado
+    </a>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">
+      Certificado ATLS
+    </div>
+
+    <div class="cert-desc">
+      Advanced Trauma Life Support
+    </div>
+
+    <a href="/atls/" class="btn">
+      Verificar Certificado
+    </a>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 Sistema de Verificação de Certificados • certificadoac.com.br
+</div>
+```
+
+  </div>
 
 </body>
 </html>
